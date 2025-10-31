@@ -18,6 +18,8 @@ public class CustomListTest {
     void testDelete() {
         CustomList list = new CustomList();
         City edmonton = new City("Edmonton", "AB");
+        list.addCity(edmonton);
+
         assertTrue(list.hasCity(edmonton));
 
         list.delete(edmonton);
